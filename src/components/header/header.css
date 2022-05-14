@@ -55,6 +55,12 @@
     }
     
 }
+@media screen and (max-width:500px) {
+    .headerInfoDiv{
+        left:0;
+    }
+}
+
 @media screen and (max-width:430px) {
     .TitleImage{
         width: 300px;
@@ -63,7 +69,6 @@
         width: 360px;
         transform:scale(0.6);
         top:90px;
-        left:30px;
     }
     
 }
