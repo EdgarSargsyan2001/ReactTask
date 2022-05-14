@@ -15,7 +15,6 @@ function Nav({chlickHome}) {
   return (
 
     <div className='navDiv'>
-     
 
       <div 
         className='icons' 
@@ -47,19 +46,19 @@ function Nav({chlickHome}) {
             </div>
           </div>
         }
-
+        {!flag &&
           <div className='position'>
-            <Icon  imgPaf={'ICON - Search.png'}/>
-            <Icon  imgPaf={'Group 46.png'}/>
-            <Icon  imgPaf={'Group 56.png'}/>
-            <Icon  imgPaf={'Group 54.png'}/>
-            <Icon  imgPaf={'Group 53.png'}/>
-            <Icon  imgPaf={'Group 47.png'}/>
+            <Icon DivClick={DivClick} imgPaf={'ICON - Search.png'}/>
+            <Icon DivClick={DivClick} imgPaf={'Group 46.png'}/>
+            <Icon DivClick={DivClick} imgPaf={'Group 56.png'}/>
+            <Icon DivClick={DivClick} imgPaf={'Group 54.png'}/>
+            <Icon DivClick={DivClick} imgPaf={'Group 53.png'}/>
+            <Icon DivClick={DivClick} imgPaf={'Group 47.png'}/>
           </div>
-
+        }
+          
       </div>
 
-      
     </div>
   );
 }

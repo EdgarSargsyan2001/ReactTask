@@ -64,6 +64,8 @@ h3{
     position:absolute;
     box-shadow: 33px 0px 15px 9px rgba(4, 4, 4, 0.8);
     z-index: 5;
+    animation-name: Myanim;
+    animation-duration: 1s;
 }
 .langExit{
     cursor: pointer;
@@ -82,4 +84,60 @@ h3{
 }
 .UserNamr{
     margin-left: 30px;
+}
+
+@keyframes Myanim {
+    0%{
+        transform: scale(0.95);
+        background-image: linear-gradient(to left, rgba(4, 4, 4), rgba(4, 4, 4),#040404FF);;
+        box-shadow: 33px 0px 15px 9px rgba(4, 4, 4,0.97);
+        left:-60px;
+
+    }
+    15%{
+        background-image: linear-gradient(to left, rgba(4, 4, 4,0.95), rgba(4, 4, 4,0.99),#040404FF);;
+        box-shadow: 33px 0px 15px 9px rgba(4, 4, 4,0.95);
+
+    }
+    30%{
+        background-image: linear-gradient(to left, rgba(4, 4, 4,0.92), rgba(4, 4, 4,0.97),#040404FF);;
+        box-shadow: 33px 0px 15px 9px rgba(4, 4, 4,0.91);
+    }
+    45%{
+        background-image: linear-gradient(to left, rgba(4, 4, 4,0.89), rgba(4, 4, 4,0.96),#040404FF);;
+        box-shadow: 33px 0px 15px 9px rgba(4, 4, 4,0.87);
+
+    }
+    60%{
+        background-image: linear-gradient(to left, rgba(4, 4, 4,0.87), rgba(4, 4, 4,0.95),#040404FF);;
+        box-shadow: 33px 0px 15px 9px rgba(4, 4, 4,0.85);
+    }
+    75%{
+        background-image: linear-gradient(to left, rgba(4, 4, 4,0.85), rgba(4, 4, 4,0.93),#040404FF);;
+        box-shadow: 33px 0px 15px 9px rgba(4, 4, 4,0.83);
+
+    }
+    100%{
+        left:0px;
+    }
+    
+}
+
+
+@media screen and (max-width:500px) {
+    .more{
+        width: 200px;
+
+    }
+    .navDiv{
+
+        width: 70px 
+    }
+    .icon,.icon2{
+
+        margin: 0px 10px ;
+        padding: 15px;
+    }
+
+    
 }

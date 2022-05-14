@@ -72,8 +72,15 @@
     
 }
 @media screen and (max-width:500px) {
+    .next,.prev{
+        width: 25px !important;
+        font-size: 25px;
+
+    }
     .screen{
+        
         width:70vw;
+        left: 70px;
  
     }
     
