@@ -1,7 +1,7 @@
-import './slaider.css'
-import Items from './Items'
-import { useState } from 'react'
 import ButtonNextPrev from './ButtonNextPrev'
+import { useState } from 'react'
+import Items from './Items'
+import './slaider.css'
 
 
 
@@ -15,12 +15,10 @@ function Slaider({TendingNow,changeInfo}) {
     
     arr = arr.filter((el)=>{
 
-      if(el.Id === Id) {
-        item = el
-        return false
-      }
-      return true
-
+      if(el.Id !== Id) return true
+        
+      item = el
+      
     })
 
     if(item) arr.unshift(item)
