@@ -1,0 +1,85 @@
+.navDiv{
+    color: white;
+    position:absolute;
+    z-index: 4;
+    width: 100px ;
+    height: 99.7vh;
+    background-color: #040404FF;
+}
+.icons{
+    
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.position{
+    position: absolute;
+    top:130px;
+}
+.icon{
+    
+    border-radius: 50%;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin: 10px 25px ;
+    padding: 15px;
+}
+h3{
+    margin: 0;
+}
+.icon2{
+
+    width: 160px;
+    height: 20px;
+    margin: 10px 25px ;
+    padding: 15px;
+    border-radius:20px;
+    cursor: pointer;
+}
+
+.icon2:hover{
+    transition: 0.3s ;
+    background-color: #3B486DFF;
+}
+
+.iconImg{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+}
+.iconImg2{
+    width: 20px;
+    height: 20px;
+    margin-right: 25px;
+}
+
+.more{
+    width: 300px;
+    height: 99.7vh;
+    background-image: linear-gradient(to left, rgba(4, 4, 4, 0.8), rgba(4, 4, 4, 0.9),#040404FF);;
+    position:absolute;
+    box-shadow: 33px 0px 15px 9px rgba(4, 4, 4, 0.8);
+    z-index: 5;
+}
+.langExit{
+    cursor: pointer;
+    position:absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+.user{
+    position:absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: 50px;
+    left: 50px;
+}
+.UserNamr{
+    margin-left: 30px;
+}
