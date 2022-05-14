@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Task description
+    Create a web app with the given design. The app is a TV application based on web technology with react.js
+    lib. In the design file you can find two screens. We also sent to you the data folder with the assets files
+    (images, videos), and JSON data file where you can get all the video data you needed for the task.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+    1. Main menu with icons
+    2. Main featured video
+    3. Trending now section
 
-## Available Scripts
+# 1. Main menu
+    At the left side of the screen you can see main menu icons (Search, Home, TV shows, movies, genres,
+    watch later). On hover the menu will be opened by an animation float from left to right with the background
+    translation from 0 opacity to 80. At the opened view we have profile info icons with their name and additional
+    menu items at the bottom side (language, get help, exit)
 
-In the project directory, you can run:
+# 2. Main featured video
+    At the left top side of the screen we can see a featured video block that contains the last featured movie. The
+    block features video cover image, category name (Movie), movie logo in transparent PNG format, release
+    year, MPA rating, duration, short description, and two buttons (play and more info).
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# 3. Trending now section
+    At this section you need get all the trending videos with max 50 counts sorted by last added or created at
+    from the JSON file, and place with carousel view, on the screen must be viewed only first 8 elements, after
+    scrolling or dragging with mouse the carousel must show the others from right side, the move component on
+    this section contain only movies cover.
+    If a user clicks on any movie, they need to change the top featured section content like image, category, title,
+    description and save the movie ID in session storage and during the next render time (ex. When the user
+    refreshes the page) need to sort the movie list by the last clicked (seen) videos at the first position and then
+    the rest videos with default order
